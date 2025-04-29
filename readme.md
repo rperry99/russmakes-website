@@ -2,7 +2,7 @@
 
 ⚡ My personal website and creative workshop.
 
-This site is a digital home for my work, thoughts, and projects. It features a curated portfolio, an ongoing workshop of in-progress or experimental ideas, and a place to explore what I’ve been building, designing, or just nerding out about.
+This site is intended to function as a portfolio as well as a place to post about my personal projects, whether it's about web develpment, design, or any of my other projects, like 3D printing or photography.
 
 ---
 
@@ -13,7 +13,5 @@ This site is a digital home for my work, thoughts, and projects. It features a c
 - JavaScript (Vanilla)
 - Designed with Figma + Affinity
 - Deployed with GitHub Pages
-
-No frameworks, no build tools — just clean, accessible code and handcrafted markup.
 
 ---
