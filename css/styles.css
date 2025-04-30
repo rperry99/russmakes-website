@@ -1,9 +1,79 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+  --background-color: #0d1117;
+  --main-text-color: #e6e6e6;
+  --accent-color: #439775;
+  --accent-color-dim: #377f62;
+  --secondary-accent-color: #d4af37;
+  --exrta-highlight: #7f8c8d;
+  --display-text: "Space Grotesk", sans-serif;
+  --body-text: "Raleway", sans-serif;
 }
 
-h1 {
-    color: red;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background: var(--background-color);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-section img {
+  width: 50px;
+  height: auto;
+  margin-right: 50px;
+}
+
+.logo-section p {
+  color: var(--main-text-color);
+  font-family: var(--display-text);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--body-text);
+  font-weight: bold;
+  transition: color ease 0.3s;
+}
+
+.nav-links a:not(:last-child){
+  margin-right: 20px;
+}
+
+.nav-links a:hover:not(.nav-cta) {
+  color: var(--accent-color);
+}
+
+.nav-links a.nav-cta {
+  display: inline-block;
+  background: var(--accent-color);
+  padding: 10px 20px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-links a.nav-cta:hover {
+  background-color: var(--accent-color-dim);
+  transform: translateY(-1px);
+}
+
+
