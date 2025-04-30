@@ -1,0 +1,50 @@
+body {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: var(--display-text);
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+
+p,
+a {
+  font-family: var(--body-text);
+  color: var(--main-text-color);
+}
+
+a {
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 3px;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.socials {
+  margin: 40px 0 20px;
+}
+
+.socials a {
+  transition: filter 0.2s ease;
+}
+
+.socials a img {
+  width: 45px;
+  height: 45px;
+}
+
+.socials a:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.socials a:hover {
+  filter: opacity(70%);
+}
