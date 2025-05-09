@@ -1,0 +1,164 @@
+:root {
+  --deg: -86deg;
+  --trans: all 0.4s ease 0s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body *,
+body *:before,
+body *:after {
+  box-sizing: border-box;
+}
+
+.content {
+  width: 90vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.me {
+  margin: 1.5em 0 0.5em;
+  padding: 0.73em;
+  background: linear-gradient(
+    83deg,
+    var(--accent-color) 0 97%,
+    #fff0 calc(97% + 1px) 100%
+  );
+  position: relative;
+  display: inline-block;
+  transform: scale(1.2);
+  transition: var(--trans);
+}
+
+.thumbnail {
+  width: 13vmin;
+  height: 13vmin;
+  float: left;
+  margin-right: 1.25em;
+  background: linear-gradient(
+    var(--deg),
+    var(--background-color) 0% 70%,
+    var(--accent-color) 0% 100%
+  );
+  transform: rotate(-4deg);
+  transition: var(--trans);
+  border-radius: 0.25em;
+  overflow: hidden;
+  margin-left: -3em;
+  padding: 0.5em;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25em;
+  filter: grayscale(1.3);
+  background: var(--background-color);
+}
+
+/* .me:hover {
+  transform: scale(1.3);
+  transition: var(--trans);
+  filter: drop-shadow(0px 20px 10px #0008);
+}
+
+.me:hover .thumbnail {
+  padding: 0.1em;
+  transition: var(--trans);
+  transform: rotate(-1deg);
+  --deg: -89deg;
+}
+
+.me:hover .thumbnail img {
+  filter: none;
+  transition: var(--trans);
+} */
+
+.description {
+  padding-top: 1vmin;
+}
+
+.description p {
+  padding: 0 2em;
+  margin: 1em 0;
+  font-family: var(--body-text);
+}
+
+h3 {
+  background: linear-gradient(
+    182deg,
+    #fff0 60%,
+    var(--background-color) 0 100%
+  );
+  display: inline;
+  transform: rotate(-2deg);
+  position: absolute;
+  margin: 0;
+  margin-top: -2.25em;
+  left: 9vmin;
+  padding: 0.5em 0.75em;
+  color: var(--accent-color);
+  border-radius: 0.25em;
+  font-size: 1.35em;
+  transform-origin: left bottom;
+  font-family: var(--display-text);
+  z-index: 6000;
+}
+
+/* .me:hover h3 {
+  transition: var(--trans);
+  transform: rotate(0deg);
+  background: linear-gradient(
+    180deg,
+    #fff0 59%,
+    var(--background-color) 0 100%
+  );
+} */
+
+.owner:after {
+  content: 'DESIGNER / DEVELOPER';
+  font-size: 0.75em;
+  position: absolute;
+  top: -1.5em;
+  background: var(--accent-color);
+  right: 4em;
+  transform: rotate(3deg);
+  padding: 0.35em 0.75em 0.5em;
+  border-radius: 0.25em;
+  color: var(--background-color);
+  font-weight: bold;
+}
+
+.description p a {
+  display: inline-block;
+  margin: 0.5em 0 0 0;
+  background: var(--background-color);
+  color: var(--accent-color);
+  padding: 0.1em 0.5em 0.35em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  transition: var(--trans);
+}
+.description p a:hover {
+  transition: var(--trans);
+  color: var(--background-color);
+  background: var(--accent-color);
+  font-weight: bold;
+}
+
+.description p a img {
+  float: left;
+  width: 22px;
+  filter: invert(1);
+  border-radius: 0.15em;
+  padding: 2px;
+  background: #fff;
+  margin-right: 2px;
+}

@@ -1,12 +1,12 @@
 :root {
   --background-color: #0d1117;
   --main-text-color: #e6e6e6;
-  --accent-color: #439775;
-  --accent-color-dim: #377f62;
+  --accent-color: #51b38c;
+  --accent-color-dim: #439775;
   --secondary-accent-color: #d4af37;
   --exrta-highlight: #7f8c8d;
-  --display-text: "Space Grotesk", sans-serif;
-  --body-text: "Raleway", sans-serif;
+  --display-text: 'Space Grotesk', sans-serif;
+  --body-text: 'Raleway', sans-serif;
 }
 
 * {
@@ -25,6 +25,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  width: 100%;
 }
 
 .logo-section {
@@ -56,7 +57,7 @@ nav {
   transition: color ease 0.3s;
 }
 
-.nav-links a:not(:last-child){
+.nav-links a:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -66,14 +67,26 @@ nav {
 
 .nav-links a.nav-cta {
   display: inline-block;
-  background: var(--accent-color);
+  background: linear-gradient(
+    87deg,
+    var(--accent-color) 0 97%,
+    #fff0 calc(97% + 1px) 100%
+  );
   padding: 10px 20px;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  color: var(--background-color);
 }
 
 .nav-links a.nav-cta:hover {
-  background-color: var(--accent-color-dim);
-  transform: translateY(-1px);
+  background: linear-gradient(
+    87deg,
+    var(--accent-color-dim) 0 97%,
+    #fff0 calc(97% + 1px) 100%
+  );
+  transform: rotate(-3deg);
 }
 
-
+.nav-links a.active {
+  border-bottom: solid 5px var(--accent-color);
+  padding-bottom: 5px;
+}
